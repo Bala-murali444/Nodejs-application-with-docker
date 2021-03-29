@@ -10,7 +10,9 @@ pipeline {
         git credentialsId: 'git-creds', url: 'https://github.com/Bala-murali444/Nodejs-application-with-docker.git'
       }
     }
-        
+    stages {
+      
+    }
     stage('Install dependencies') {
       steps {
         sh 'npm install'
